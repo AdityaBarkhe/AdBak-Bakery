@@ -1,0 +1,199 @@
+/* Style the navigation bar */
+nav {
+    background-color: rgb(190, 51, 190);
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    /* z-index: 500; */
+    margin: 2px 0;
+    transition: top 0.5s; /* add a transition effect for smooth animation */
+}
+
+.nav-hidden {
+    top: -100px; /* move the navigation bar off the screen */
+}
+
+nav img{
+    height: 22px;
+    /* width: 60px; */
+    /* filter: brightness(300%); */
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    float: left;
+    color: white;       
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: rgb(224, 87, 224);
+    color: black;
+    /* padding: 20px 80px; */
+}
+
+/* Style the search input */
+nav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 20%;
+}
+
+/* Style the search button */
+nav button {
+    padding: 6px;
+    margin-top: 15px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Change the color of the search button on hover */
+nav button:hover {
+    background-color: #bbb;
+}
+
+/* home id styles */
+#home {
+    margin-top: 68px;
+    background-image: url(images/bakery.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 30px black;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    /* background-color: rgba(192, 192, 192, .7); */
+    /* text-shadow: 0 0 20px black; */
+}
+
+#home p {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+#home h1, 
+#home p{
+    border: 3px solid rgb(224, 87, 224);
+}
+
+/* buttons styles */
+.buttons {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(156, 66, 156);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buttons:hover {
+    color: black;
+    background-color: rgba(192, 192, 192, .7);
+    box-shadow: 0 0 20px black;
+}
+
+/* Smooth scrolls */
+html {
+    scroll-behavior: smooth;
+}
+
+/* dark theme */
+body {
+    background-color: black;
+}
+
+/* endsection styles */
+.mysec {
+    background-color: gray;
+    margin: 5px 0;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+.mysec h2 {
+    margin: 50px;
+    text-decoration: underline;
+}
+
+.mysec p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-size: 18px;
+    background-color: gray;
+}
+
+.mysec img{
+    padding-bottom: 20px;
+    height: 230px;
+}
+
+#about{
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+/* contact page */
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 70px auto; */
+}
+
+#contact h2{
+    text-decoration: underline ;
+    margin: 9px;
+}
+
+.contactDiv{
+    padding: 125px 100px;
+}
+
+#contact form{
+    width: 400px;
+    text-align: left;
+}
+
+#contact label{
+    padding-top: 10px;
+}
+
+/* Styles for the footer */
+footer {
+    background-color: #9b9a9a;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 5px 0;
+}
+
+footer p {
+    font-size: 18px;
+    color: black;
+}

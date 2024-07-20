@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo.png">
+    <title>Contact</title>
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="/products/order.css">
+</head>
+
+<body>
+    <header>
+
+        <nav id="navbar">
+            <a href="index.html"><img src="/images/logonew.png" alt="logo"></a>
+            <a href="index.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section id="contact" class="mysec">
+
+        <div class="contactDiv">
+            <h2>Contact</h2>
+            <h3>Address:</h3>
+            <p>AdBak Bakery shop, near Storm Hotel, Baker's street.</p>
+            <h3>Mob. No:</h3>
+            <p>+91 84532 64765</p>
+            <h3>Email:</h3>
+            <p>adirrb9909@gmail.com</p>
+            <p>We'd love to hear from you! Please fill out the adjacent form to get in touch with us.</p>
+        </div>
+
+        <div class="contactDiv">
+            <form action="http://localhost/MyPhp/responses.php" method="post" onsubmit="response()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required class="orderpro">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required class="orderpro">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" class="orderpro">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required class="orderpro"></textarea>
+
+                <button type="submit" value="Submit" class="orderpro">Submit Response </button>
+            </form>
+        </div>
+
+    </section>
+
+    <script>
+        function response() {
+            alert("Response submittted..");
+        }
+    </script>
+    
+</body>
+
+</html>

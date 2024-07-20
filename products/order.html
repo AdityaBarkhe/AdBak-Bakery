@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo.png">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="/home_style.css">
+    <!-- <link rel="stylesheet" href="/product.css"> -->
+    <script src="/nav.js"></script>
+    <link rel="stylesheet" href="order.css">
+    <!-- D:\PROJECT\ADITYA3096\MainProejct2\products\order.html -->
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="/Home.html"><img src="/images/logonew.png" alt="logo"></a>
+        <a href="/Home.html">Home</a>
+        <a href="/Products.html">Products</a>
+        <!-- <form align="right" action="#" method="get">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit">Go</button>
+        </form> -->
+    </nav>
+
+    <div class="login_form">
+
+        <div id="close-login"></div>
+        <form method="POST" action="http://localhost/MyPhp/submit_order.php">
+            <h2>Order Form</h2>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required class="orderpro">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required class="orderpro">
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required  class="orderpro">
+                <small>Format: 1234567890</small>
+            </div>
+            <div>
+                <label for="product">Product:</label>
+                <select id="product" name="product" required  class="orderpro">
+                    <option value="">--Select a product--</option>
+                    <option value="Cupcake">Cupcake</option>
+                    <option value="Black-Forest">Black Forest</option>
+                    <option value="Coconut-Cake">Coconut Cake</option>
+                    <option value="Red-Velvet-cake">Red Velvet cake</option>
+                    <option value="Carrot-Cake">Carrot Cake</option>
+                    <option value="Charlotte-Cake">Charlotte Cake</option>
+                    <option value="Coffee-Cake">Coffee Cake</option>
+                    <option value="Fruit-Cake">Fruit Cake</option>
+                    <option value="Sicilian-Cake">Sicilian Cake</option>
+                    <option value="Chocolate-Cake">Chocolate Cake</option>
+                    <option value="Red Velvet Cookies">Red Velvet Cookies</option>
+                    <option value="Chocolate Doughnut">Chocolate Doughnut</option>
+                    <option value="Cruller">Cruller</option>
+                    <option value="Chocolate Chip Cookies">Chocolate Chip Cookies</option>
+                    <option value="White Chocolate and Raspberry Cookies">White Chocolate and Raspberry Cookies</option>
+                    <option value="Double chocolate chip muffins">Double chocolate chip muffins</option>
+                    <option value="Triple Pastries Pack">Triple Pastries Pack</option>
+                    <option value="Pineapple Pastry">Pineapple Pastry</option>
+                </select>
+            </div>
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" required  class="orderpro">
+                <span class="orderpro" id="onlycash">Only Cash On Delivery</span>
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" class="orderpro"></textarea>
+            </div>
+            <button type="submit" class="orderpro">Place Order</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
